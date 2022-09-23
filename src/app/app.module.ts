@@ -7,9 +7,10 @@ import { RestaComponent } from './calculos/resta/resta.component';
 
 import { FormsModule } from '@angular/forms';
 import { ProductListComponent } from './podruct/product-list/product-list.component';
+import { ProductoFilterPipe } from './podruct/producto-filter.pipe';
 
 @NgModule({
-  declarations: [AppComponent, SumaComponent, RestaComponent, ProductListComponent],
+  declarations: [AppComponent, SumaComponent, RestaComponent, ProductListComponent, ProductoFilterPipe],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
