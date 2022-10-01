@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {  } from "@angular/router";
+
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SumaComponent } from './calculos/suma/suma.component';
 import { RestaComponent } from './calculos/resta/resta.component';
@@ -13,10 +17,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from '@angular/material/button';
-import { AppRoutingModule } from './app-routing.module';
+import { TablaComponent } from './calculos/tabla/tabla.component';
+import { VistaComponent } from './cinepolis/vista/vista.component';
+
 
 @NgModule({
-  declarations: [AppComponent, SumaComponent, RestaComponent, ProductListComponent, ProductoFilterPipe, MenuComponent],
+  declarations: [AppComponent, SumaComponent, RestaComponent, ProductListComponent, ProductoFilterPipe, MenuComponent, TablaComponent, VistaComponent],
   imports: [BrowserModule, FormsModule, BrowserAnimationsModule,MatButtonModule,MatIconModule,MatToolbarModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
